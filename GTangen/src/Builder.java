@@ -17,6 +17,7 @@ public class Builder {
 	
 	public void structure(int SIZE){
 		frame.setTitle("Mold Infection System");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(399+(SIZE*5),400+(SIZE*5));
 		frame.setVisible(true);
 		frame.add(panel);
@@ -53,6 +54,8 @@ public class Builder {
 		text2.setText(s);
 		
 	}
+	
+	
 
 	
 }

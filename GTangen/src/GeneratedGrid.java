@@ -9,7 +9,7 @@
  */
 
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class GeneratedGrid {
 
@@ -42,7 +42,7 @@ public class GeneratedGrid {
 		waitHere();
 
 		boolean proceed = true;
-		Scanner scan = new Scanner(System.in);
+		//Scanner scan = new Scanner(System.in);
 		while (proceed) {
 
 			/*
@@ -109,7 +109,7 @@ public class GeneratedGrid {
 				proceed = false;
 			}
 
-			//Iff more can grow, it will give the option to allow it to grow again
+			//If more can grow, it will give the option to allow it to grow again
 			if (proceed) {
 				//printMold(mold, SIZE);
 				bob.updateScreen(mold);
@@ -121,6 +121,12 @@ public class GeneratedGrid {
 			}
 
 		}
+		
+		for(int i = 0; i<10; i++){
+			waitHere();
+		}
+		
+		
 	}
 
 	public static void printMold(String[][] a, int SIZE) {
@@ -134,7 +140,7 @@ public class GeneratedGrid {
 
 	private static void waitHere() {
 		try {
-			Thread.sleep(1000); // 1000 milliseconds is one second.
+			Thread.sleep(100); // 1000 milliseconds is one second.
 		} catch (InterruptedException ex) {
 			Thread.currentThread().interrupt();
 		}
